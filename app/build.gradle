@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.um.playvideo"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        signingConfigs {
+            release {
+                storeFile file("../hellovr10.jks")
+                storePassword '123456'
+                keyAlias 'vr'
+                keyPassword '123456'
+            }
+            debug {
+                storeFile file("../hellovr10.jks")
+                storePassword '123456'
+                keyAlias 'vr'
+                keyPassword '123456'
+            }
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
