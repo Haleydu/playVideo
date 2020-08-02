@@ -23,8 +23,7 @@ deploy:
   # 除此之外，Travis CI还支持发布到fir.im、AWS、Google App Engine等
   provider: releases
   # Github oauth token
-  api_key:
-    secure: fQsq+ckCIddediuo0kpA9HEPXmuHIL+qstaIVpkSBSLerHt0v3ppla8RURgQod3Esd6gd1p/zBeae5ipGlwTe1IHmr77NTSGHRFBdvAktXEeXjFfGDFNAX3eK8uaPznhcwIyf+KR0qcBJGKADECrl+bO/TqA0oNS1z8xJJxmhljQp2zmWLM8kHNtv8L8Xi+Ss3KpRTapJOkqNZOGP6LChs53vLp3fF53n2Iutze9JNfn5c0NxBb1kOUAS4ghD17IlKkwdKwxp/Hka7cHb72yR2bPP7NiELcWtY2HhZunqen2n5ge8jvWf9MP/IODH7rvM5IHP1uslAgyvCdQa+u7YmhB3i4PhEkjyZhKi7oMa8RIBJmddFjZrpqxZJfMKGu5/DnZrSD+2gGIFzKlZKfuYqM8PG1TYNz7hea/BdiSreI7nOV5Nye44pMFkKi3mSc/9ViPjPCQbBpDzHGRce1K5x+LXw4kGP9OG4MURsMNZKKSNdEuOS6xTLlsEAGI97pl/KksJmi9xGouGRm9QVuSRCUzTtI4CEBKjCThBs5c0otJnxNqN0hdvOPCuniHwiaukNFOxF3SGR9izR4agcBCO7dOry1YsgUX6kLTSCSlhlGJkyJIZ291dgTCC9o4tOfpMyKKoG8iIA5gBupDLu/rrMcYYODIxI/IwuZGwRu/6w8=
+  api_key: $GIT_TOKEN
   # 部署文件路径；对于Android就部署生成的 apk 文件
   file: app/build/outputs/apk/release/PlayVideo.apk
   # 发布时机
