@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/Haleydu/playVideo.svg?branch=master)](https://travis-ci.com/Haleydu/playVideo)
+
 视频画面移动播放
 
 可以缩放视频
