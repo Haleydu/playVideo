@@ -11,6 +11,8 @@ android:        # 配置信息
     - extra-android-m2repository
     # Support Library
     - extra-android-support
+before_script:
+    - chmod +x gradlew
 script:
   # 生成 APK
   - ./gradlew assembleRelease
