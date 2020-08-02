@@ -5,8 +5,8 @@ language: android
 android:        # 配置信息
   components:
     # 你可能需要修改下面两项的版本
-    - build-tools-29.0.2
-    - android-28
+    - build-tools-29.0.3
+    - android-26
     # Android Support Repository
     - extra-android-m2repository
     # Support Library
