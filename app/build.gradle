@@ -36,7 +36,7 @@ android {
         }
         android.applicationVariants.all { variant ->
             variant.outputs.all {
-                outputFileName = "PlayVideo.apk"
+                outputFileName = "PlayVideo_"+versionName+".apk"
             }
         }
     }

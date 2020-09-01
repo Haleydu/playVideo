@@ -25,7 +25,8 @@ deploy:
   # Github oauth token
   api_key: $GIT_TOKEN
   # 部署文件路径；对于Android就部署生成的 apk 文件
-  file: app/build/outputs/apk/release/PlayVideo.apk
+  file: app/build/outputs/apk/release/PlayVideo*.apk
+
   # 发布时机
   on:
     # tags设置为true表示只有在有tag的情况下才部署
