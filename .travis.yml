@@ -22,20 +22,12 @@ script:
 deploy:
   # 部署到GitHub Release。
   # 除此之外，Travis CI还支持发布到fir.im、AWS、Google App Engine等
-  - provider: releases
+  provider: releases
   # Github oauth token
   api_key: $GIT_TOKEN
   # 部署文件路径；对于Android就部署生成的 apk 文件
   file: app/build/outputs/apk/release/PlayVideo*.apk
   file_glob: true
-
-
-  - provider: releases
-  # Github oauth token
-  # 部署文件路径；对于Android就部署生成的 apk 文件
-  file: index.json
-  file_glob: true
-
   # 发布时机
   on:
     # tags设置为true表示只有在有tag的情况下才部署
