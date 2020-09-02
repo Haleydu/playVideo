@@ -17,14 +17,9 @@ printf $MD5
 printf "\n"
 printf "}"
 
-jq -n \
-        --argjson versionCode "$VERSIONNAME" \
-        --arg versionName "$VERSIONNAME" \
-        --arg md5 $MD5 \
-        '{versionCode:$versionCode, versionName:$versionName, md5:$md5}'
-
-jq -sr '[.[]]' > index.json
-
+echo versionCode:$TRAVIS_BUILD_NUMBER > index.json
+echo versionName:"$VERSIONNAME" > index.json
+echo md5:"$MD5" > index.json
 cat index.json
 
 pwd
