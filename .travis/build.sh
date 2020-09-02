@@ -24,5 +24,8 @@ echo "{
   md5:\"$MD5\"
 }" > ApkInfo.json
 
+
 printf "\n"
 pwd
+ls -l
+cat ApkInfo.json
